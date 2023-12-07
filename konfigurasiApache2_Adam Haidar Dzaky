@@ -1,0 +1,7 @@
+<VirtualHost *:3000>
+    ProxyPreserveHost On
+
+    ProxyPass / http://0.0.0.0:8000/
+    ProxyPassReverse / http://0.0.0.0:8000
+</VirtualHost>
+
